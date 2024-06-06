@@ -43,4 +43,9 @@ public class Biblioteca {
     public List<Livro> buscarLivrosPorEditora(String editora) {
         List<Livro> livrosEncontrados = new ArrayList<>();
         for (Livro livro : listaLivros) {
-            if (livro.getEditora().toLowerCase().equals(editora.toLowerCase())) {
+            if (livro.getEditora().toLowerCase().equals(editora.toLowerCase())) {     
+                livrosEncontrados.add(livro);
+            }
+        }
+        return livrosEncontrados;
+    }
